@@ -10,13 +10,9 @@ namespace DientesLimpios.Dominio.ObjetosDeValor
         {
             if (fechaInicio >= fechaFin)
             {
-                throw new ExcepcionReglaDeNegocio("La fecha de inicio debe ser menor a la fecha de fin");
+                throw new ExcepcionReglaDeNegocio("La hora de inicio debe ser anterior a la hora de fin.");
             }
 
-            /*if (fechaInicio < DateTime.Now)
-            {
-                throw new ExcepcionReglaDeNegocio("La fecha de inicio debe ser mayor a la fecha actual");
-            }*/
             FechaInicio = fechaInicio;
             FechaFin = fechaFin;
         }
